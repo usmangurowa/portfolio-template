@@ -1,5 +1,5 @@
-const close_ = "http://127.0.0.1:5500/static/close.svg";
-const open_ = "http://127.0.0.1:5500/static/menu.svg";
+const close_ = window.location.origin + "/static/close.svg";
+const open_ = window.location.origin + "/static/menu.svg";
 
 $(document).ready(Ready);
 
