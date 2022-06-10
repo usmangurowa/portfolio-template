@@ -2,7 +2,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -11,6 +11,7 @@ body {
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 .container {
   background-color: #121212;
@@ -22,7 +23,7 @@ body {
 .navigation-bar {
   list-style-type: none;
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .navigation-bar li {
@@ -52,6 +53,7 @@ li.btn {
 div.hero {
   display: flex;
   height: fit-content;
+  align-items: center;
 }
 
 div.hero div {
@@ -59,8 +61,7 @@ div.hero div {
 }
 
 div.text .subtitle {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: medium;
   text-transform: uppercase;
   display: block;
@@ -103,4 +104,71 @@ span.button:hover {
 }
 span.button:active {
   opacity: 0.5;
+}
+
+.nav-mobile .navigation-bar {
+  display: none;
+}
+.navigation-bar img {
+  width: 20px;
+}
+.tmp {
+  height: 100vh;
+}
+.navigation-bar.mobile {
+  margin-bottom: 1px;
+}
+div.mobile-menu {
+  display: none;
+}
+
+div.mobile-menu ul {
+  list-style-type: none;
+}
+div.mobile-menu ul li {
+  margin: 10px 15px;
+  padding: 12px 15px;
+  font-size: small;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    padding: 0px 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding: 0px 150px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-desktop .navigation-bar {
+    display: none;
+  }
+  .nav-mobile .navigation-bar {
+    display: flex !important;
+  }
+  .container {
+    padding: 0px 15px;
+    height: fit-content;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  div.hero .text {
+    text-align: center;
+  }
+  div.hero .text .button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.hero div {
+    width: 100% !important;
+  }
 }

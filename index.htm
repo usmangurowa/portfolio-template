@@ -12,12 +12,14 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    <script src="./script/jquery.js"></script>
   </head>
 
   <body>
     <div class="container">
       <!-- Navigation Starts Here -->
-      <nav>
+      <nav class="nav-desktop">
+        <!-- Desktop Navigation -->
         <ul class="navigation-bar">
           <li>
             <a href="#">#Unknown</a>
@@ -37,6 +39,31 @@
           </li>
         </ul>
       </nav>
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile">
+        <ul class="navigation-bar mobile">
+          <li>
+            <a href="#">#Unknown</a>
+          </li>
+          <span class="grow"></span>
+          <img id="menu-icon" src="/static/menu.svg" />
+      </nav>
+      <div id="sliding" class="mobile-menu">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">My Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Clients</a>
+          </li>
+          <li >
+            <a href="#">Get in touch</a>
+          </li>
+        </ul>
+      </div>
       <!-- Navigation Ends Here -->
 
       <!-- Hero Section Starts Here -->
@@ -52,6 +79,9 @@
       </div>
 
       <!-- Hero Section Ends Here -->
+
+      <div class="tmp"></div>
     </div>
+    <script src="./script/index.js"></script>
   </body>
 </html>
