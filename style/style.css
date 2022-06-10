@@ -84,17 +84,16 @@ div.text .title {
   text-transform: capitalize;
 }
 
-div.pics img {
-  width: 100%;
-  height: fit-content;
-}
-
 div.pics {
   background-image: url(/static/person.jpg);
   background-position: center;
   background-size: cover;
   height: 450px;
   border-radius: 5px;
+  border-top-right-radius: 225px;
+  border-top-left-radius: 225px;
+  border-bottom-right-radius: 225px;
+  border: 2px solid gold;
 }
 
 span.button {
